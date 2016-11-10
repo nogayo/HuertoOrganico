@@ -1,6 +1,7 @@
 (deftemplate Nodo
 	(slot nombre)
 	(slot tipo )
+        (slot descrip )
 	(slot pregunta)
 	(slot respuesta)
 	(slot nodo-si)

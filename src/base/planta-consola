@@ -9,7 +9,7 @@
 (defrule start
 	(declare (salience 1))
 	=>
-	(printout t "** Bienvenido a identifica tu animal **" crlf)
+	(printout t "**bienbenido plantacion de cebolla **" crlf)
 )
 
 

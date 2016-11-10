@@ -13,7 +13,7 @@ import jess.Rete;
 
 /**
  *
- * @author Alex
+ * @author edwin
  */
 public class MotorController{
     Rete motor;

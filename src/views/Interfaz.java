@@ -7,6 +7,7 @@ package views;
 
 import controllers.EventHandler;
 import controllers.MotorController;
+import java.awt.Window;
 import javax.swing.JOptionPane;
 
 /**
@@ -39,6 +40,10 @@ public class Interfaz extends javax.swing.JFrame {
         INICIAR = new javax.swing.JButton();
         fase3 = new javax.swing.JCheckBox();
         jLabel1 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        SALIR = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         javax.swing.GroupLayout MENSAJELayout = new javax.swing.GroupLayout(MENSAJE.getContentPane());
         MENSAJE.getContentPane().setLayout(MENSAJELayout);
@@ -54,153 +59,224 @@ public class Interfaz extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("SISTEMA EXPERTO INSTRUCCION PARA LA PLANTACION Y COSECHA DE CEBOLLA");
         setBackground(new java.awt.Color(0, 153, 0));
-        setIconImages(null);
-        setLocation(new java.awt.Point(100, 50));
-        setMaximumSize(new java.awt.Dimension(500, 500));
+        setFont(new java.awt.Font("Aparajita", 3, 10)); // NOI18N
+        setForeground(java.awt.Color.red);
+        setLocation(new java.awt.Point(25, 25));
         setMinimumSize(new java.awt.Dimension(100, 100));
+        setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
+        setResizable(false);
         setSize(new java.awt.Dimension(1300, 100));
 
         jPanel1.setBackground(new java.awt.Color(0, 204, 153));
+        jPanel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel1.setDoubleBuffered(false);
         jPanel1.setEnabled(false);
         jPanel1.setFocusable(false);
+        jPanel1.setFont(new java.awt.Font("Forte", 0, 11)); // NOI18N
 
-        fase2.setBackground(new java.awt.Color(0, 204, 255));
+        fase2.setBackground(new java.awt.Color(0, 153, 153));
+        fase2.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 18)); // NOI18N
         fase2.setText(" FASE 2 PREPARACION DE SUELO");
+        fase2.setBorderPainted(true);
+        fase2.setBorderPaintedFlat(true);
         fase2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 fase2ActionPerformed(evt);
             }
         });
 
-        fase1.setBackground(new java.awt.Color(0, 204, 204));
+        fase1.setBackground(new java.awt.Color(0, 153, 153));
+        fase1.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 18)); // NOI18N
         fase1.setText(" FASE 1 ALMACIGADO");
+        fase1.setBorderPainted(true);
+        fase1.setCursor(new java.awt.Cursor(java.awt.Cursor.S_RESIZE_CURSOR));
         fase1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 fase1ActionPerformed(evt);
             }
         });
 
-        INICIAR.setBackground(new java.awt.Color(0, 102, 102));
-        INICIAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/clik.gif"))); // NOI18N
+        INICIAR.setBackground(new java.awt.Color(255, 255, 204));
+        INICIAR.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 1, 36)); // NOI18N
+        INICIAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/cebolla.gif"))); // NOI18N
         INICIAR.setText(" INICIAR");
-        INICIAR.setBorderPainted(false);
-        INICIAR.setContentAreaFilled(false);
+        INICIAR.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.white, java.awt.Color.black, java.awt.Color.red, java.awt.Color.darkGray));
         INICIAR.setFocusPainted(false);
+        INICIAR.setMargin(new java.awt.Insets(2, 14, 4, 14));
+        INICIAR.setSelected(true);
         INICIAR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 INICIARActionPerformed(evt);
             }
         });
 
-        fase3.setBackground(new java.awt.Color(0, 204, 255));
+        fase3.setBackground(new java.awt.Color(0, 153, 153));
+        fase3.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 18)); // NOI18N
         fase3.setText(" FASE 3 COSECHA Y CONSUMO");
+        fase3.setBorderPainted(true);
+        fase3.setBorderPaintedFlat(true);
         fase3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 fase3ActionPerformed(evt);
             }
         });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/huerto.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/compu.gif"))); // NOI18N
         jLabel1.setText("jLabel1");
+
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/TITULO.jpg"))); // NOI18N
+        jButton1.setText("jButton1");
+        jButton1.setAlignmentY(0.0F);
+        jButton1.setBorder(null);
+        jButton1.setBorderPainted(false);
+        jButton1.setContentAreaFilled(false);
+        jButton1.setDefaultCapable(false);
+        jButton1.setFocusPainted(false);
+        jButton1.setFocusable(false);
+        jButton1.setRequestFocusEnabled(false);
+        jButton1.setRolloverEnabled(false);
+        jButton1.setVerifyInputWhenFocusTarget(false);
+
+        SALIR.setBackground(new java.awt.Color(255, 255, 204));
+        SALIR.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 1, 36)); // NOI18N
+        SALIR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/salir.png"))); // NOI18N
+        SALIR.setText(" SALIR");
+        SALIR.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.white, java.awt.Color.black, java.awt.Color.red, java.awt.Color.darkGray));
+        SALIR.setFocusPainted(false);
+        SALIR.setMargin(new java.awt.Insets(2, 14, 4, 14));
+        SALIR.setSelected(true);
+        SALIR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SALIRActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/abajo.jpg"))); // NOI18N
+        jLabel2.setText("jLabel2");
+        jLabel2.setFocusable(false);
+        jLabel2.setInheritsPopupMenu(false);
+        jLabel2.setRequestFocusEnabled(false);
+        jLabel2.setVerifyInputWhenFocusTarget(false);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/portada.jpg"))); // NOI18N
+        jLabel3.setText("jLabel3");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(29, 29, 29)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(fase2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(fase3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(fase1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(fase2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                            .addComponent(fase1, javax.swing.GroupLayout.DEFAULT_SIZE, 177, Short.MAX_VALUE))
-                        .addGap(160, 160, 160)
-                        .addComponent(jLabel1)
-                        .addGap(160, 160, 160))
+                        .addComponent(INICIAR, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(69, 69, 69)
+                        .addComponent(SALIR, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(fase3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(INICIAR, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(29, 29, 29)))
+                .addGap(109, 109, 109))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jLabel2)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(139, Short.MAX_VALUE)
-                .addComponent(fase1, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(114, 114, 114)
-                .addComponent(fase2, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(105, 105, 105)
-                .addComponent(fase3, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(144, 144, 144)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(INICIAR, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jButton1)
+                .addGap(18, 18, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(fase1, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(56, 56, 56)
+                        .addComponent(fase2, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(51, 51, 51)
+                        .addComponent(fase3, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(INICIAR, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SALIR, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1261, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 635, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void fase2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fase2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_fase2ActionPerformed
 
     private void fase3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fase3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_fase3ActionPerformed
 
     private void INICIARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_INICIARActionPerformed
-      if(fase1.isSelected()&& !fase2.isSelected()&&!fase3.isSelected()){
-             empezar(1);
-             
-          System.out.println("primer boton marcado");
-      }else{
+        if(fase1.isSelected()&& !fase2.isSelected()&&!fase3.isSelected()){
+            empezar(1);
+
+            System.out.println("primer boton marcado");
+        }else{
             if(!fase1.isSelected()&& fase2.isSelected()&&!fase3.isSelected()){
-                 empezar(2); 
-                
+                empezar(2);
+
                 System.out.println("fase 2 ejecutar");
-                }else{
+            }else{
                 if(!fase1.isSelected()&& !fase2.isSelected()&&fase3.isSelected()){
                     empezar(3);
-                    
+
                     System.out.println("fase 3 ejecutar");
                 }else{
-                    
-                   if(!fase1.isSelected()&& !fase2.isSelected()&&!fase3.isSelected()){
-                  // MyIcon icon =new MyIcon();
-                  JOptionPane.showMessageDialog(null, "DEBE USTED MARCAR UNA FASE OBLIGADO ..", "MENSAJE ALERTA",JOptionPane.WARNING_MESSAGE);
-                   }else{
-                       JOptionPane.showMessageDialog(null, "DEBE USTED MARCAR SOLO UNA FASE ..","MENSAJE ALERTA",JOptionPane.WARNING_MESSAGE);
-                    
-                System.out.println("debe marcar solo una casilla");
-                 }
+
+                    if(!fase1.isSelected()&& !fase2.isSelected()&&!fase3.isSelected()){
+                        // MyIcon icon =new MyIcon();
+                        JOptionPane.showMessageDialog(null, "DEBE USTED MARCAR UNA FASE OBLIGADO ..", "MENSAJE ALERTA",JOptionPane.WARNING_MESSAGE);
+                    }else{
+                        JOptionPane.showMessageDialog(null, "DEBE USTED MARCAR SOLO UNA FASE ..","MENSAJE ALERTA",JOptionPane.WARNING_MESSAGE);
+
+                        System.out.println("debe marcar solo una casilla");
+                    }
                 }
-                 
-                  }    
-               
-      }
+
+            }
+
+        }
     }//GEN-LAST:event_INICIARActionPerformed
 
     private void fase1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fase1ActionPerformed
         // TODO add your handling code here:
-        
-        
+
     }//GEN-LAST:event_fase1ActionPerformed
+
+    private void fase2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fase2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fase2ActionPerformed
+
+    private void SALIRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SALIRActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_SALIRActionPerformed
 
     /**
      * @param args the command line arguments
@@ -252,14 +328,21 @@ public class Interfaz extends javax.swing.JFrame {
         motorController.ejecutar();
     }
      
+     //**HACACEMOS LOS BORDES DEL PANEL FRAME
+     //
+     
      
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton INICIAR;
     private javax.swing.JDialog MENSAJE;
+    private javax.swing.JButton SALIR;
     private javax.swing.JCheckBox fase1;
     private javax.swing.JCheckBox fase2;
     private javax.swing.JCheckBox fase3;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

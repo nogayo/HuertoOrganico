@@ -5,13 +5,14 @@
  */
 package controllers;
 
+import javax.swing.JOptionPane;
 import util.Helper;
 import views.View;
 import jess.*;
 
 /**
  *
- * @author Alex
+ * @author edwin
  */
 public class EventHandler implements JessListener{
 
@@ -35,6 +36,9 @@ public class EventHandler implements JessListener{
                 try {
                     slotV = nodoActual.get(0).toString();
                     nodo = helper.findFactByTemplateName("MAIN::Nodo", "nombre", slotV);
+                    String descripcion = nodo.getSlotValue("descrip").stringValue(context);
+                    if(!descripcion.equals("null"))
+                            JOptionPane.showMessageDialog(null,descripcion,"Instructivo",JOptionPane.INFORMATION_MESSAGE);
                     if (nodo != null){
                         String tipo = nodo.getSlotValue("tipo").stringValue(context);
                         if (tipo.equals("pregunta")){

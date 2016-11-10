@@ -10,7 +10,7 @@ import views.View;
 
 /**
  *
- * @author Alex
+ * @author edwin
  */
 public class Controller {
 

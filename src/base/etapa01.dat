@@ -1,31 +1,39 @@
-(Nodo (nombre nodo-0) (tipo pregunta) (pregunta "¿Realizaste correctamente el almacigado y traslado de la cebolla si/no?") (respuesta nil) (nodo-si nodo-1) (nodo-no nodo-2))
-(Nodo (nombre nodo-1) (tipo respuesta) (pregunta nil) (respuesta "pasar a la segunda fase") (nodo-si nil) (nodo-no nil))
-(Nodo (nombre nodo-2) (tipo pregunta) (pregunta "¿Realizaste el almacigado de la semilla de cebolla si/no?") (respuesta nil) (nodo-si nodo-9) (nodo-no nodo-3))
+(Nodo (nombre nodo-0) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste correctamente el almacigado y traslado de la cebolla si/no?") (respuesta nil) (nodo-si nodo-1) (nodo-no nodo-2))
+(Nodo (nombre nodo-1) (tipo respuesta) (descrip "null") (pregunta nil) (respuesta "pasar a la segunda fase") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-2) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste el almacigado de la semilla de cebolla si/no?") (respuesta nil) (nodo-si nodo-9) (nodo-no nodo-3))
 
-(Nodo (nombre nodo-3) (tipo pregunta) (pregunta "¿Completaste la preaparacion de la caja de almacigado si/no?") (respuesta nil) (nodo-si nodo-6) (nodo-no nodo-4))
-(Nodo (nombre nodo-4) (tipo pregunta) (pregunta "¿Elaboraste la caja con las caracteristicas necesarias si/no?") (respuesta nil) (nodo-si nodo-5) (nodo-no nodo-5))
+(Nodo (nombre nodo-3) (tipo pregunta) (descrip "null") (pregunta "¿Completaste la preaparacion de la caja de almacigado si/no?") (respuesta nil) (nodo-si nodo-6) (nodo-no nodo-4))
+(Nodo (nombre nodo-4) (tipo pregunta) (descrip "1.Elaborar una caja de aproximadamente 0.70x0.70 metros y 0.25 metros de alto.
+	2.En la base debe tener agujeros de no mas de medio centimetro cada 7 centimetros, esto para eliminar el exceso de agua") (pregunta "¿Elaboraste la caja con las caracteristicas necesarias si/no?") (respuesta nil) (nodo-si nodo-5) (nodo-no nodo-5))
 
-(Nodo (nombre nodo-5) (tipo pregunta) (pregunta "¿Colocaste el contenido necesario en la caja de almacigado si/no?") (respuesta nil) (nodo-si nodo-6) (nodo-no nodo-6))
+(Nodo (nombre nodo-5) (tipo pregunta) (descrip "1.Llenar con tierra poco rocosa en la base de la caja
+	2.Debera ser tierra negra y suelta.") (pregunta "¿Colocaste el contenido necesario en la caja de almacigado si/no?") (respuesta nil) (nodo-si nodo-6) (nodo-no nodo-6))
 
-(Nodo (nombre nodo-6) (tipo pregunta) (pregunta "¿Realizaste la insercion de semillas si/no?") (respuesta nil) (nodo-si nodo-) (nodo-no nodo-7))
-(Nodo (nombre nodo-7) (tipo pregunta) (pregunta "¿Preparaste el marcado de surcos en la caja de almacigado si/no?") (respuesta nil) (nodo-si nodo-8) (nodo-no nodo-8))
+(Nodo (nombre nodo-6) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste la insercion de semillas si/no?") (respuesta nil) (nodo-si nodo-) (nodo-no nodo-7))
+(Nodo (nombre nodo-7) (tipo pregunta) (descrip "1.Surcar lineas de 1cm de profundidad.
+	2.debera tener una distancia de surcos de 5cm.") (pregunta "¿Preparaste el marcado de surcos en la caja de almacigado si/no?") (respuesta nil) (nodo-si nodo-8) (nodo-no nodo-8))
 
-(Nodo (nombre nodo-8) (tipo pregunta) (pregunta "¿Realizaste la insercion de las semillas en los surcos si/no?") (respuesta nil) (nodo-si nodo-9) (nodo-no nodo-9))
+(Nodo (nombre nodo-8) (tipo pregunta) (descrip "1.En los surco deberas poner una semilla cada 5cm.") (pregunta "¿Realizaste la insercion de las semillas en los surcos si/no?") (respuesta nil) (nodo-si nodo-9) (nodo-no nodo-9))
 
-(Nodo (nombre nodo-9) (tipo pregunta) (pregunta "¿Completaste el tratamiento del almacigado si/no?") (respuesta nil) (nodo-si nodo-13) (nodo-no nodo-10))
-(Nodo (nombre nodo-10) (tipo pregunta) (pregunta "¿Verificaste la ubicacion de la caja de almacigado si/no?") (respuesta nil) (nodo-si nodo-11) (nodo-no nodo-11))
+(Nodo (nombre nodo-9) (tipo pregunta) (descrip "null") (pregunta "¿Completaste el tratamiento del almacigado si/no?") (respuesta nil) (nodo-si nodo-13) (nodo-no nodo-10))
+(Nodo (nombre nodo-10) (tipo pregunta) (descrip "1.la ubicacion debera ser que se mantenga en semi-sombra") (pregunta "¿Verificaste la ubicacion de la caja de almacigado si/no?") (respuesta nil) (nodo-si nodo-11) (nodo-no nodo-11))
 
-(Nodo (nombre nodo-11) (tipo pregunta) (pregunta "¿Contemplaste los cuidados necesarios del almacigado si/no?") (respuesta nil) (nodo-si nodo-12) (nodo-no nodo-12))
+(Nodo (nombre nodo-11) (tipo pregunta) (descrip "1.Regar todos los dias con lluvia fina
+	2.realizar la misma accion entre 2 a 4 semanas.") (pregunta "¿Contemplaste los cuidados necesarios del almacigado si/no?") (respuesta nil) (nodo-si nodo-12) (nodo-no nodo-12))
 
-(Nodo (nombre nodo-12) (tipo pregunta) (pregunta "¿Verificaste el desarrollo de las plantas en el almacigado si/no?") (respuesta nil) (nodo-si nodo-13) (nodo-no nodo-13))
+(Nodo (nombre nodo-12) (tipo pregunta) (descrip "1.La planta debera tener almenos tres hojas 
+	2.El tamaño debera de ser de 12 a 15 cm.") (pregunta "¿Verificaste el desarrollo de las plantas en el almacigado si/no?") (respuesta nil) (nodo-si nodo-13) (nodo-no nodo-13))
 
-(Nodo (nombre nodo-13) (tipo pregunta) (pregunta "¿Realizaste la transplantacion del almacigado si/no?") (respuesta nil) (nodo-si nodo-18) (nodo-no nodo-14))
-(Nodo (nombre nodo-14) (tipo pregunta) (pregunta "¿Contemplaste el horario de la transplantacion si/no?") (respuesta nil) (nodo-si nodo-15) (nodo-no nodo-15))
+(Nodo (nombre nodo-13) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste la transplantacion del almacigado si/no?") (respuesta nil) (nodo-si nodo-18) (nodo-no nodo-14))
+(Nodo (nombre nodo-14) (tipo pregunta) (descrip "1.Realizar la transplantacion por horas de la tarde para aprovechar el frsco de la noche
+") (pregunta "¿Contemplaste el horario de la transplantacion si/no?") (respuesta nil) (nodo-si nodo-15) (nodo-no nodo-15))
 
-(Nodo (nombre nodo-15) (tipo pregunta) (pregunta "¿Contemplaste la debida extraccion de las plantas del almacigado si/no?") (respuesta nil) (nodo-si nodo-16) (nodo-no nodo-16))
+(Nodo (nombre nodo-15) (tipo pregunta) (descrip "1.Sacar una por una par la tranplantacion
+	2.Utilizar una cuchara para la extraccion de cada planta, asi no cortar las raices") (pregunta "¿Contemplaste la debida extraccion de las plantas del almacigado si/no?") (respuesta nil) (nodo-si nodo-16) (nodo-no nodo-16))
 
-(Nodo (nombre nodo-16) (tipo pregunta) (pregunta "¿Preparaste los hoyos en la huerta si/no?") (respuesta nil) (nodo-si nodo-17) (nodo-no nodo-17))
+(Nodo (nombre nodo-16) (tipo pregunta) (descrip "1.Marcar surcos en el huerto con una separacion de 50 a 60 cm 
+	2.Creacionde hoyos sobre cada linea de 15 a 20 cm de searacion") (pregunta "¿Preparaste los hoyos en la huerta si/no?") (respuesta nil) (nodo-si nodo-17) (nodo-no nodo-17))
 
-(Nodo (nombre nodo-17) (tipo pregunta) (pregunta "¿Realizaste la insercion de las plantas a la huerta si/no?") (respuesta nil) (nodo-si nodo-18) (nodo-no nodo-18))
-(Nodo (nombre nodo-18) (tipo respuesta) (pregunta nil) (respuesta "pasar a la segunda fase") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-17) (tipo pregunta) (descrip "1.En cada centro del hoyo se debe insertar una plantita del almacigado") (pregunta "¿Realizaste la insercion de las plantas a la huerta si/no?") (respuesta nil) (nodo-si nodo-18) (nodo-no nodo-18))
+(Nodo (nombre nodo-18) (tipo respuesta) (descrip "null") (pregunta nil) (respuesta "pasar a la segunda fase") (nodo-si nil) (nodo-no nil))
 

@@ -1,32 +1,32 @@
-(Nodo (nombre nodo-0) (tipo pregunta) (pregunta "¿Realizaste correctamente la preparacion del suelo si/no?") (respuesta nil) (nodo-si nodo-1) (nodo-no nodo-2))
-(Nodo (nombre nodo-1) (tipo respuesta) (pregunta nil) (respuesta "pasar a la segunda fase") (nodo-si nil) (nodo-no nil))
-(Nodo (nombre nodo-2) (tipo pregunta) (pregunta "¿Realizaste la adecuada eleccion de lugar para tu huerta si/no?") (respuesta nil) (nodo-si nodo-5) (nodo-no nodo-3))
+(Nodo (nombre nodo-0) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste correctamente la preparacion del suelo si/no?") (respuesta nil) (nodo-si nodo-1) (nodo-no nodo-2))
+(Nodo (nombre nodo-1) (tipo respuesta)(descrip "null") (pregunta nil) (respuesta "pasar a la segunda fase") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-2) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste la adecuada eleccion de lugar para tu huerta si/no?") (respuesta nil) (nodo-si nodo-5) (nodo-no nodo-3))
 
-(Nodo (nombre nodo-3) (tipo pregunta) (pregunta "¿Tienes los requerimientos para el uso de suelo si/no?") (respuesta nil) (nodo-si nodo-4) (nodo-no nodo-4))
+(Nodo (nombre nodo-3) (tipo pregunta) (descrip "null") (pregunta "¿Tienes los requerimientos para el uso de suelo si/no?") (respuesta nil) (nodo-si nodo-4) (nodo-no nodo-4))
 
-(Nodo (nombre nodo-4) (tipo pregunta) (pregunta "¿El huerto cumple una correcta orientacion con respecto al sol si/no?") (respuesta nil) (nodo-si nodo-5) (nodo-no nodo-5))
+(Nodo (nombre nodo-4) (tipo pregunta) (descrip "null") (pregunta "¿El huerto cumple una correcta orientacion con respecto al sol si/no?") (respuesta nil) (nodo-si nodo-5) (nodo-no nodo-5))
 
-(Nodo (nombre nodo-5) (tipo pregunta) (pregunta "¿Preparaste el suelo para la cosecha si/no?") (respuesta nil) (nodo-si nil) (nodo-no nodo-6))
-(Nodo (nombre nodo-6) (tipo pregunta) (pregunta "¿Determinaste el area ideal para la huerta y su acceso si/no?") (respuesta nil) (nodo-si nodo-7) (nodo-no nodo-7))
+(Nodo (nombre nodo-5) (tipo pregunta) (descrip "null") (pregunta "¿Preparaste el suelo para la cosecha si/no?") (respuesta nil) (nodo-si nil) (nodo-no nodo-6))
+(Nodo (nombre nodo-6) (tipo pregunta) (descrip "null") (pregunta "¿Determinaste el area ideal para la huerta y su acceso si/no?") (respuesta nil) (nodo-si nodo-7) (nodo-no nodo-7))
 
-(Nodo (nombre nodo-7) (tipo pregunta) (pregunta "¿Removiste y mezclaste el suelo si/no?") (respuesta nil) (nodo-si nodo-15) (nodo-no nodo-8))
-(Nodo (nombre nodo-8) (tipo pregunta) (pregunta "¿Preparaste el cebo si/no?") (respuesta nil) (nodo-si nodo-16) (nodo-no nodo-9))
-
-
-(Nodo (nombre nodo-9) (tipo pregunta) (pregunta "¿Realizaste la remocion de una fila inicial si/no?") (respuesta nil) (nodo-si nodo-10) (nodo-no nodo-10))
-
-(Nodo (nombre nodo-10) (tipo pregunta) (pregunta "¿Realizaste la insercion del mezclado si/no?") (respuesta nil) (nodo-si nodo-15) (nodo-no nodo-11))
-(Nodo (nombre nodo-11) (tipo pregunta) (pregunta "¿Realizaste la acumulacion de elementos organicos si/no?") (respuesta nil) (nodo-si nodo-14) (nodo-no nodo-12))
-
-(Nodo (nombre nodo-12) (tipo pregunta) (pregunta "¿Realizaste el calculo ideal de la masa acumulativa si/no?") (respuesta nil) (nodo-si nodo-13) (nodo-no nodo-13))
-
-(Nodo (nombre nodo-13) (tipo pregunta) (pregunta "¿Efectuaste la recoleccion de cada elemento para la mezcla si/no?") (respuesta nil) (nodo-si nodo-14) (nodo-no nodo-14))
+(Nodo (nombre nodo-7) (tipo pregunta) (descrip "null") (pregunta "¿Removiste y mezclaste el suelo si/no?") (respuesta nil) (nodo-si nodo-15) (nodo-no nodo-8))
+(Nodo (nombre nodo-8) (tipo pregunta) (descrip "null") (pregunta "¿Preparaste el cebo si/no?") (respuesta nil) (nodo-si nodo-16) (nodo-no nodo-9))
 
 
-(Nodo (nombre nodo-14) (tipo pregunta) (pregunta "¿Realizar la insercion proporcional de los elementos si/no?") (respuesta nil) (nodo-si nodo-15) (nodo-no nodo-15))
+(Nodo (nombre nodo-9) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste la remocion de una fila inicial si/no?") (respuesta nil) (nodo-si nodo-10) (nodo-no nodo-10))
+
+(Nodo (nombre nodo-10) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste la insercion del mezclado si/no?") (respuesta nil) (nodo-si nodo-15) (nodo-no nodo-11))
+(Nodo (nombre nodo-11) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste la acumulacion de elementos organicos si/no?") (respuesta nil) (nodo-si nodo-14) (nodo-no nodo-12))
+
+(Nodo (nombre nodo-12) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste el calculo ideal de la masa acumulativa si/no?") (respuesta nil) (nodo-si nodo-13) (nodo-no nodo-13))
+
+(Nodo (nombre nodo-13) (tipo pregunta) (descrip "null") (pregunta "¿Efectuaste la recoleccion de cada elemento para la mezcla si/no?") (respuesta nil) (nodo-si nodo-14) (nodo-no nodo-14))
 
 
-(Nodo (nombre nodo-15) (tipo pregunta) (pregunta "¿Pusiste la cubierta del mezclado si/no?") (respuesta nil) (nodo-si nodo-16) (nodo-no nodo-16))
+(Nodo (nombre nodo-14) (tipo pregunta) (descrip "null") (pregunta "¿Realizar la insercion proporcional de los elementos si/no?") (respuesta nil) (nodo-si nodo-15) (nodo-no nodo-15))
 
-(Nodo (nombre nodo-16) (tipo pregunta) (pregunta "¿Realizaste el removido del area total del huerto si/no?") (respuesta nil) (nodo-si nodo-17) (nodo-no nodo-17))
-(Nodo (nombre nodo-17) (tipo respuesta) (pregunta nil) (respuesta "pasar a la segunda fase") (nodo-si nil) (nodo-no nil))
+
+(Nodo (nombre nodo-15) (tipo pregunta) (descrip "null") (pregunta "¿Pusiste la cubierta del mezclado si/no?") (respuesta nil) (nodo-si nodo-16) (nodo-no nodo-16))
+
+(Nodo (nombre nodo-16) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste el removido del area total del huerto si/no?") (respuesta nil) (nodo-si nodo-17) (nodo-no nodo-17))
+(Nodo (nombre nodo-17) (tipo respuesta) (descrip "null") (pregunta nil) (respuesta "pasar a la segunda fase") (nodo-si nil) (nodo-no nil))

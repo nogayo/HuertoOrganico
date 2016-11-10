@@ -8,7 +8,7 @@ import jess.Value;
 import java.util.Iterator;
 
 /**
- * Created by Alex on 23/11/2014.
+ * Created edwin
  */
 public class Helper {
     Rete motor;

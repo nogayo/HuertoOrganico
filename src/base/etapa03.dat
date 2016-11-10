@@ -1,28 +1,28 @@
-(Nodo (nombre nodo-0) (tipo pregunta) (pregunta "¿Realizaste el ciclo de cosecha de la cebolla si/no?") (respuesta nil) (nodo-si nodo-1) (nodo-no nodo-2))
-(Nodo (nombre nodo-1) (tipo respuesta) (pregunta nil) (respuesta "pasar a la segunda fase") (nodo-si nil) (nodo-no nil))
-(Nodo (nombre nodo-2) (tipo pregunta) (pregunta "¿Realizaste la aplicacion fitosanitaria si/no?") (respuesta nil) (nodo-si nodo-5) (nodo-no nodo-3))
-(Nodo (nombre nodo-3) (tipo pregunta) (pregunta "¿Realizaste la preparacion de plaguisidas si/no?") (respuesta nil) (nodo-si nodo-4) (nodo-no nodo-4))
+(Nodo (nombre nodo-0) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste el ciclo de cosecha de la cebolla si/no?") (respuesta nil) (nodo-si nodo-1) (nodo-no nodo-2))
+(Nodo (nombre nodo-1) (tipo respuesta) (descrip "null") (pregunta nil) (respuesta "pasar a la segunda fase") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-2) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste la aplicacion fitosanitaria si/no?") (respuesta nil) (nodo-si nodo-5) (nodo-no nodo-3))
+(Nodo (nombre nodo-3) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste la preparacion de plaguisidas si/no?") (respuesta nil) (nodo-si nodo-4) (nodo-no nodo-4))
 
-(Nodo (nombre nodo-4) (tipo pregunta) (pregunta "¿Realizaste el riego proporcional del plaguisida si/no?") (respuesta nil) (nodo-si nodo-5) (nodo-no nodo-5))
+(Nodo (nombre nodo-4) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste el riego proporcional del plaguisida si/no?") (respuesta nil) (nodo-si nodo-5) (nodo-no nodo-5))
 
-(Nodo (nombre nodo-5) (tipo pregunta) (pregunta "¿Realizaste la aplicacion de un fungicida si/no?") (respuesta nil) (nodo-si nodo-8) (nodo-no nodo-6))
-(Nodo (nombre nodo-6) (tipo pregunta) (pregunta "¿Realizaste la preparacion del fungicida natural si/no?") (respuesta nil) (nodo-si nodo-7) (nodo-no nodo-7))
+(Nodo (nombre nodo-5) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste la aplicacion de un fungicida si/no?") (respuesta nil) (nodo-si nodo-8) (nodo-no nodo-6))
+(Nodo (nombre nodo-6) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste la preparacion del fungicida natural si/no?") (respuesta nil) (nodo-si nodo-7) (nodo-no nodo-7))
 
-(Nodo (nombre nodo-7) (tipo pregunta) (pregunta "¿Realizaste el riego proporcional del fungicida si/no?") (respuesta nil) (nodo-si nodo-8) (nodo-no nodo-8))
+(Nodo (nombre nodo-7) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste el riego proporcional del fungicida si/no?") (respuesta nil) (nodo-si nodo-8) (nodo-no nodo-8))
 
-(Nodo (nombre nodo-8) (tipo pregunta) (pregunta "¿Realizaste los trabajos culturales si/no?") (respuesta nil) (nodo-si nodo-9) (nodo-no nodo-9))
-(Nodo (nombre nodo-9) (tipo pregunta) (pregunta "¿Realizaste la aplicacion de abono foliar si/no?") (respuesta nil) (nodo-si nodo-10) (nodo-no nodo-10))
+(Nodo (nombre nodo-8) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste los trabajos culturales si/no?") (respuesta nil) (nodo-si nodo-9) (nodo-no nodo-9))
+(Nodo (nombre nodo-9) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste la aplicacion de abono foliar si/no?") (respuesta nil) (nodo-si nodo-10) (nodo-no nodo-10))
 
-(Nodo (nombre nodo-10) (tipo pregunta) (pregunta "¿Realizaste la preparacion de abono foliar si/no?") (respuesta nil) (nodo-si nodo-11) (nodo-no nodo-11))
+(Nodo (nombre nodo-10) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste la preparacion de abono foliar si/no?") (respuesta nil) (nodo-si nodo-11) (nodo-no nodo-11))
 
-(Nodo (nombre nodo-11) (tipo pregunta) (pregunta "¿realizaste la vigorizacion de tierra con el abono foliar si/no?") (respuesta nil) (nodo-si nodo-12) (nodo-no nodo-12))
+(Nodo (nombre nodo-11) (tipo pregunta) (descrip "null") (pregunta "¿realizaste la vigorizacion de tierra con el abono foliar si/no?") (respuesta nil) (nodo-si nodo-12) (nodo-no nodo-12))
 
-(Nodo (nombre nodo-12) (tipo pregunta) (pregunta "¿Realizaste la cosecha y consumo si/no?") (respuesta nil) (nodo-si nodo-15) (nodo-no nodo-13))
-(Nodo (nombre nodo-13) (tipo pregunta) (pregunta "¿Realaste la correcta excracion del producto si/no?") (respuesta nil) (nodo-si nodo-14) (nodo-no nodo-14))
+(Nodo (nombre nodo-12) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste la cosecha y consumo si/no?") (respuesta nil) (nodo-si nodo-15) (nodo-no nodo-13))
+(Nodo (nombre nodo-13) (tipo pregunta) (descrip "null") (pregunta "¿Realaste la correcta excracion del producto si/no?") (respuesta nil) (nodo-si nodo-14) (nodo-no nodo-14))
 
-(Nodo (nombre nodo-14) (tipo pregunta) (pregunta "¿Realizaste la apropiada recoleccion de la planta si/no?") (respuesta nil) (nodo-si nodo-15) (nodo-no nodo-15))
+(Nodo (nombre nodo-14) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste la apropiada recoleccion de la planta si/no?") (respuesta nil) (nodo-si nodo-15) (nodo-no nodo-15))
 
-(Nodo (nombre nodo-15) (tipo respuesta) (pregunta nil) (respuesta "terminaste la cosecha y procuccion de la cebolla") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-15) (tipo respuesta) (descrip "null") (pregunta nil) (respuesta "terminaste la cosecha y procuccion de la cebolla") (nodo-si nil) (nodo-no nil))
 
 
 
