@@ -17,14 +17,24 @@ import jess.Rete;
  */
 public class MotorController{
     Rete motor;
-
-    public MotorController() {
+      private int numFase;
+    public MotorController(int i) {
         try {
             motor = new Rete();
             
             motor.reset();
-            motor.batch("base/planta-grafico.clp");
-            //motor.run();
+            
+            switch(i){
+            case 1:  motor.batch("base/planta-grafico01.clp");
+            break;
+            case 2: motor.batch("base/planta-grafico02.clp");
+            break;
+            case 3:motor.batch("base/planta-grafico03.clp");
+            break;
+            default:
+           }
+            
+           
         } catch (JessException ex) {
             Logger.getLogger(MotorController.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -46,6 +56,10 @@ public class MotorController{
         } catch (JessException ex) {
             Logger.getLogger(MotorController.class.getName()).log(Level.SEVERE, null, ex);
         }
+    }
+
+    public void setFase(int fase) {
+        numFase=fase;
     }
     
 }

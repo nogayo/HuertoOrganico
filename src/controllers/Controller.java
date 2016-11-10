@@ -5,6 +5,7 @@
  */
 package controllers;
 
+import views.Interfaz;
 import views.View;
 
 /**
@@ -13,21 +14,19 @@ import views.View;
  */
 public class Controller {
 
+    
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        View zooView = new View();
-        MotorController motorController = new MotorController();        
-        EventHandler eventController = new EventHandler(zooView);
-        
-        zooView.setMotorController(motorController);
-        
-        motorController.addEscuchador(eventController);
-        
-        motorController.ejecutar();
-        
-    }
+        Interfaz interfaz = new Interfaz();
+          interfaz.setVisible(true);
+               
     
-}
+        
+       }
+} 
+      
+    
+

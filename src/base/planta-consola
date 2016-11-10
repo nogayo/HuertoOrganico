@@ -16,7 +16,7 @@
 (defrule inicio
 	(not (Nodo (nombre nodo-0)))
 	=>
-	(load-facts "com/sistemas/clips/file.dat")
+	(load-facts "base/etapa01.dat")
 	(assert (nodo-actual nodo-0))
 )
 

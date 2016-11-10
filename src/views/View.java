@@ -44,12 +44,17 @@ public class View extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Identifica tu animal");
+        setTitle("SISTEMA EXPERTO PARA LA SIEMBRA Y COSECHA DE CEBOLLA");
 
         bgOpciones.add(jrbSi);
         jrbSi.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jrbSi.setForeground(new java.awt.Color(51, 51, 51));
         jrbSi.setText("Si");
+        jrbSi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jrbSiActionPerformed(evt);
+            }
+        });
 
         bgOpciones.add(jrbNo);
         jrbNo.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -176,6 +181,10 @@ public class View extends javax.swing.JFrame {
                 Logger.getLogger(View.class.getName()).log(Level.SEVERE, null, ex);
             }
     }//GEN-LAST:event_jbSiguienteMouseClicked
+
+    private void jrbSiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrbSiActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jrbSiActionPerformed
 
     public void setMotorController(MotorController motorController){
         this.motorController = motorController;
