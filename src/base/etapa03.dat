@@ -1,31 +1,76 @@
-(Nodo (nombre nodo-0) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste el ciclo de cosecha de la cebolla si/no?") (respuesta nil) (nodo-si nodo-1) (nodo-no nodo-2))
-(Nodo (nombre nodo-1) (tipo respuesta) (descrip "null") (pregunta nil) (respuesta "pasar a la segunda fase") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-0) (tipo pregunta) (descrip "A partir de ahora son 120 dias que durara la cosecha, , realizar el riego dia por medio hasta terminar la cosecha") (pregunta "¿Realizaste el ciclo de cosecha de la cebolla si/no?") (respuesta nil) (nodo-si nodo-1) (nodo-no nodo-2))
+(Nodo (nombre nodo-1) (tipo respuesta) (descrip "null") (pregunta nil) (respuesta "Terminaste la cosecha de la planta") (nodo-si nil) (nodo-no nil))
 (Nodo (nombre nodo-2) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste la aplicacion fitosanitaria si/no?") (respuesta nil) (nodo-si nodo-5) (nodo-no nodo-3))
-(Nodo (nombre nodo-3) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste la preparacion de plaguisidas si/no?") (respuesta nil) (nodo-si nodo-4) (nodo-no nodo-4))
+(Nodo (nombre nodo-3) (tipo pregunta) (descrip "
+	
+Aplicacion en el dia 10 a partir del transplantado
+	Preparacion de plaguisida de Ajo 
+		MATERIALES 
+-10 cabezas de ajo  
+-5 cebollas grandes 
+-Una bola grande de jabón 
+-25 litros de agua (una cantarada) 
+
+PREPARACIÓN
+Moler las 10 cabezas de ajo y las 5 cebollas grande
+s. Luego raspar una pelota grande de jabón, 
+disuelto en 25 litros de agua (una cantarada). Dejar ésta mezcla en reposo durante 4-5 días y 
+colarla. 
+DOSIS 
+2 litros por bombada.
+CONTROLA - Todas las plagas en los cultivos. 
+") (pregunta "¿Realizaste la preparacion de plaguisidas si/no?") (respuesta nil) (nodo-si nodo-4) (nodo-no nodo-4))
 
 (Nodo (nombre nodo-4) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste el riego proporcional del plaguisida si/no?") (respuesta nil) (nodo-si nodo-5) (nodo-no nodo-5))
 
 (Nodo (nombre nodo-5) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste la aplicacion de un fungicida si/no?") (respuesta nil) (nodo-si nodo-8) (nodo-no nodo-6))
-(Nodo (nombre nodo-6) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste la preparacion del fungicida natural si/no?") (respuesta nil) (nodo-si nodo-7) (nodo-no nodo-7))
+(Nodo (nombre nodo-6) (tipo pregunta) (descrip "
+	
+Aplicacion del dia 40 a partir del transplantado
+	Fungicida de papaya 
+ACCIÓN Controlar las enfermedades del follaje en la planta 
+MATERIALES 
+-5 libras de hojas y tallos de papaya bien picadas 
+-15 litros de agua 
+-1 bola grande de jabón disuelto  
+PREPARACION 
+Mezclar todos los ingredientes y dejar reposar por un día 
+DOSIS
+5 litros por bombada 
+CONTROLA
+Royas y mildius 
+") (pregunta "¿Realizaste la preparacion del fungicida natural si/no?") (respuesta nil) (nodo-si nodo-7) (nodo-no nodo-7))
 
 (Nodo (nombre nodo-7) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste el riego proporcional del fungicida si/no?") (respuesta nil) (nodo-si nodo-8) (nodo-no nodo-8))
 
 (Nodo (nombre nodo-8) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste los trabajos culturales si/no?") (respuesta nil) (nodo-si nodo-9) (nodo-no nodo-9))
 (Nodo (nombre nodo-9) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste la aplicacion de abono foliar si/no?") (respuesta nil) (nodo-si nodo-10) (nodo-no nodo-10))
 
-(Nodo (nombre nodo-10) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste la preparacion de abono foliar si/no?") (respuesta nil) (nodo-si nodo-11) (nodo-no nodo-11))
+(Nodo (nombre nodo-10) (tipo pregunta) (descrip "
+Aplicacion del dia 100 a partir del transplantado.
+	ESTIERCOL DE VACA MATERIALES 
+-1 quintal de estiércol de ganado 
+-10 libras de cáscara de chichicaste machacado 
+-Hojas o tallo de higuero 
+-Un barril de agua 
+PREPARACION 
+Echar todo el material en un barril, menos el agua y por último, agregar el agua. Cada dos días 
+revolver el contenido del material hasta que se
+fermente. Después de 8 días de fermentación, 
+") (pregunta "¿Realizaste la preparacion de abono foliar si/no?") (respuesta nil) (nodo-si nodo-11) (nodo-no nodo-11))
 
-(Nodo (nombre nodo-11) (tipo pregunta) (descrip "null") (pregunta "¿realizaste la vigorizacion de tierra con el abono foliar si/no?") (respuesta nil) (nodo-si nodo-12) (nodo-no nodo-12))
+(Nodo (nombre nodo-11) (tipo pregunta) (descrip "
+	Terminado la preparacion del abono foliar
+1.Se debe de aplicar directamente a la planta.
+2.Depende de la cantidad del preparado realizarlo cada 4 horas hasta terminar todo el preparado
+") (pregunta "¿realizaste la vigorizacion de tierra con el abono foliar si/no?") (respuesta nil) (nodo-si nodo-12) (nodo-no nodo-12))
 
 (Nodo (nombre nodo-12) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste la cosecha y consumo si/no?") (respuesta nil) (nodo-si nodo-15) (nodo-no nodo-13))
-(Nodo (nombre nodo-13) (tipo pregunta) (descrip "null") (pregunta "¿Realaste la correcta excracion del producto si/no?") (respuesta nil) (nodo-si nodo-14) (nodo-no nodo-14))
+(Nodo (nombre nodo-13) (tipo pregunta) (descrip "Dias entre 110 a 120 aproximadamente.
 
-(Nodo (nombre nodo-14) (tipo pregunta) (descrip "null") (pregunta "¿Realizaste la apropiada recoleccion de la planta si/no?") (respuesta nil) (nodo-si nodo-15) (nodo-no nodo-15))
+El momento adecuado para extraer las cebollas del terreno se da cuando las hojas están secas, es decir, cuando pierden el color verde, y adoptan un color amarillento o marrón claro. 
+Cuando vemos que comienza a cambiar el color por las puntas, o incluso antes si el tamaño que tienen nos resulta adecuado, se puede cortar el riego") (pregunta "¿Realaste la correcta excracion del producto si/no?") (respuesta nil) (nodo-si nodo-14) (nodo-no nodo-14))
 
-(Nodo (nombre nodo-15) (tipo respuesta) (descrip "null") (pregunta nil) (respuesta "terminaste la cosecha y procuccion de la cebolla") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-14) (tipo pregunta) (descrip "Tiramos hacia arriba de la cebolla cogiéndola por el cuello o base de las hojas y la dejamos en la superficie del bancal. Es importante dejar secar al sol la cebolla para eliminar exceso de humedad unos dos o tres días, volteándolas alguna vez en este período, para que el secado sea homogéneo.") (pregunta "¿Realizaste la apropiada recoleccion de la planta si/no?") (respuesta nil) (nodo-si nodo-15) (nodo-no nodo-15))
 
-
-
-
-
-
+(Nodo (nombre nodo-15) (tipo respuesta) (descrip "null") (pregunta nil) (respuesta "terminaste la cosecha y produccion de la cebolla") (nodo-si nil) (nodo-no nil))
