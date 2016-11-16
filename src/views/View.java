@@ -6,6 +6,7 @@
 package views;
 
 import controllers.MotorController;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFrame;
@@ -17,12 +18,14 @@ import jess.JessException;
  */
 public class View extends javax.swing.JFrame {
     private MotorController motorController;
+    private ArrayList<String> verificados;
     /**
      * Creates 
      */
     public View() {
         initComponents();
         this.setVisible(true);
+        verificados = new ArrayList<String>();
     }
 
     /**
@@ -232,6 +235,20 @@ public class View extends javax.swing.JFrame {
         jrbNo.setVisible(false);
         jrbSi.setVisible(false);
         jbSiguiente.setText("Otra vez");
+    }
+    
+    public boolean verificaDuplicado(String valor){
+        
+        boolean res = false;
+    
+        for (String verificado : verificados) {
+            if(valor.equals(verificado))
+                res = true;
+        }
+        return res;
+    }
+    public void addDescripcion(String nuevo){
+       verificados.add(nuevo);
     }
     
 

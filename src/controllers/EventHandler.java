@@ -38,8 +38,11 @@ public class EventHandler implements JessListener{
                     nodo = helper.findFactByTemplateName("MAIN::Nodo", "nombre", slotV);
                     // desde aqui comienza la parte donde se muestra el contenido de la variable instrucctivo, con un showmessagge
                     String descripcion = nodo.getSlotValue("descrip").stringValue(context);
-                    if(!descripcion.equals("null"))
+                    if(!descripcion.equals("null") && !vista.verificaDuplicado(descripcion)){
+                            vista.addDescripcion(descripcion);
                             JOptionPane.showMessageDialog(null,descripcion,"Instructivo",JOptionPane.INFORMATION_MESSAGE);
+                    
+                    }
                     if (nodo != null){
                         String tipo = nodo.getSlotValue("tipo").stringValue(context);
                         if (tipo.equals("pregunta")){
